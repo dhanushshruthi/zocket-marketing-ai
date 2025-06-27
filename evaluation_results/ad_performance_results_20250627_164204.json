@@ -1,0 +1,197 @@
+{
+  "individual_results": [
+    {
+      "test_case_id": 0,
+      "timestamp": "2025-06-27T16:41:04.791694",
+      "input_size": 1,
+      "agent_response": {
+        "summary": {
+          "total_campaigns": 1,
+          "total_spend": 1813.48,
+          "total_impressions": 84810.0,
+          "total_clicks": 1132.0,
+          "total_conversions": 128.0,
+          "overall_performance": {
+            "ctr": 1.33,
+            "conversion_rate": 11.31,
+            "cpa": 14.17,
+            "cpm": 21.38,
+            "cpc": 1.6
+          },
+          "campaign_performance_distribution": {
+            "best_ctr": 1.33,
+            "worst_ctr": 1.33,
+            "best_conversion_rate": 11.31,
+            "worst_conversion_rate": 11.31,
+            "lowest_cpa": 14.17,
+            "highest_cpa": 14.17
+          }
+        },
+        "insights": [
+          "**Click-Through Rate (CTR) Analysis:**",
+          "The campaign's CTR stands at 1.33%, which is relatively low, indicating that the ads may not be effectively capturing the audience's attention or are not targeted well.",
+          "**Recommendation:** Test different ad creatives and formats to identify more engaging content. Additionally, refine the targeting criteria to reach a more relevant audience that is likely to be interested in the SaaS product.",
+          "**Conversion Rate and Cost Per Acquisition (CPA):**",
+          "The conversion rate is commendably high at 11.31%, suggesting that once users click the ad, they are likely to convert. However, the CPA of $14.17, while reasonable, could potentially be lowered to improve ROI.",
+          "**Recommendation:** Implement A/B testing on landing pages to further optimize the conversion funnel. Focus on elements like call-to-action (CTA) buttons, page load speed, and form simplicity.",
+          "**Cost-Per-Mille (CPM) and Cost-Per-Click (CPC):**"
+        ],
+        "recommendations": [
+          "**Optimize High CPA Campaigns**:",
+          "**Review Audience Targeting**: Narrow down the audience to exclude low-performing segments. Utilize audience insights to refine targeting based on demographics, interests, and behaviors that correlate with higher conversion rates.",
+          "**Adjust Bidding Strategy**: Switch from broad automatic bidding to manual or target CPA bidding, setting a lower target CPA based on historical data that aligns more closely with your successful campaigns.",
+          "**Enhance Low CTR Campaigns**:",
+          "**Creative Refresh**: Update ad creatives that are underperforming. Test new images or videos that are vibrant and eye-catching. Include clear, compelling call-to-actions (CTAs) that resonate with the target audience.",
+          "**A/B Testing**: Implement A/B tests for different elements such as headlines, ad copy, and CTAs. This will help identify what resonates best with your audience and can significantly improve your CTR.",
+          "**Boost Low Conversion Rate Campaigns**:"
+        ],
+        "top_performers": [
+          "Campaign_0_saas"
+        ],
+        "metrics": {
+          "total_impressions": 84810.0,
+          "total_clicks": 1132.0,
+          "total_conversions": 128.0,
+          "total_spend": 1813.48,
+          "overall_ctr": 1.3347482608182997,
+          "overall_conversion_rate": 11.307420494699647,
+          "overall_cpa": 14.1678125,
+          "overall_cpm": 21.382855795307155,
+          "average_cpc": 1.6020141342756185,
+          "num_campaigns": 1.0
+        }
+      }
+    },
+    {
+      "test_case_id": 1,
+      "timestamp": "2025-06-27T16:41:35.021449",
+      "input_size": 1,
+      "agent_response": {
+        "summary": {
+          "total_campaigns": 1,
+          "total_spend": 17146.84,
+          "total_impressions": 89696.0,
+          "total_clicks": 5431.0,
+          "total_conversions": 468.0,
+          "overall_performance": {
+            "ctr": 6.05,
+            "conversion_rate": 8.62,
+            "cpa": 36.64,
+            "cpm": 191.17,
+            "cpc": 3.16
+          },
+          "campaign_performance_distribution": {
+            "best_ctr": 6.05,
+            "worst_ctr": 6.05,
+            "best_conversion_rate": 8.62,
+            "worst_conversion_rate": 8.62,
+            "lowest_cpa": 36.64,
+            "highest_cpa": 36.64
+          }
+        },
+        "insights": [
+          "**High Cost-Per-Mille (CPM) and Cost-Per-Click (CPC) Analysis**:",
+          "The CPM ($191.17) and CPC ($3.16) are relatively high, suggesting that the ad placements might be in highly competitive spaces or targeting expensive audiences.",
+          "**Recommendation**: Consider testing different audience segments and ad placements to find less competitive, yet still effective, options that could lower these costs.",
+          "**Click-Through Rate (CTR) and Conversion Rate Performance**:",
+          "The CTR of 6.05% is quite robust, indicating that the ad creative and messaging are resonating well with the target audience.",
+          "The conversion rate of 8.62% is also strong, suggesting that the landing page and offer are compelling.",
+          "**Recommendation**: Since both CTR and conversion rates are performing well, focus on maintaining or slightly tweaking the current ad creative and landing page elements to continue driving engagement and conversions."
+        ],
+        "recommendations": [
+          "**Optimize High CPA Campaigns:**",
+          "**Review and Adjust Bidding Strategies:** Examine the bidding strategies being used in high CPA campaigns. If using cost-per-click (CPC) bidding, consider switching to cost-per-acquisition (CPA) bidding to better control costs relative to conversion goals.",
+          "**Refine Ad Targeting:** Narrow down the target audience based on demographic data, interests, and behaviors that correlate with higher conversion rates. Use audience insights tools to identify characteristics of top-performing segments and exclude low-performing ones.",
+          "**Enhance Low CTR Campaigns:**",
+          "**Improve Ad Creatives:** Test new images or video content that are visually engaging and relevant to the target audience. Incorporate strong call-to-actions (CTAs) that clearly communicate the value proposition.",
+          "**Optimize Ad Copy:** Experiment with different headlines and body text that speak directly to the audience\u2019s needs and pain points. Use A/B testing to determine which messages resonate best with your audience.",
+          "**Boost Low Conversion Rate Campaigns:**"
+        ],
+        "top_performers": [
+          "Campaign_1_ecommerce"
+        ],
+        "metrics": {
+          "total_impressions": 89696.0,
+          "total_clicks": 5431.0,
+          "total_conversions": 468.0,
+          "total_spend": 17146.84,
+          "overall_ctr": 6.054896539422048,
+          "overall_conversion_rate": 8.617197569508377,
+          "overall_cpa": 36.63854700854701,
+          "overall_cpm": 191.16616125579736,
+          "average_cpc": 3.1572159823236974,
+          "num_campaigns": 1.0
+        }
+      }
+    },
+    {
+      "test_case_id": 2,
+      "timestamp": "2025-06-27T16:42:04.664846",
+      "input_size": 1,
+      "agent_response": {
+        "summary": {
+          "total_campaigns": 1,
+          "total_spend": 2012.03,
+          "total_impressions": 29657.0,
+          "total_clicks": 665.0,
+          "total_conversions": 62.0,
+          "overall_performance": {
+            "ctr": 2.24,
+            "conversion_rate": 9.32,
+            "cpa": 32.45,
+            "cpm": 67.84,
+            "cpc": 3.03
+          },
+          "campaign_performance_distribution": {
+            "best_ctr": 2.24,
+            "worst_ctr": 2.24,
+            "best_conversion_rate": 9.32,
+            "worst_conversion_rate": 9.32,
+            "lowest_cpa": 32.45,
+            "highest_cpa": 32.45
+          }
+        },
+        "insights": [
+          "**High Cost-Per-Click (CPC) and Cost-Per-Mille (CPM)**:",
+          "The average CPC of $3.03 and CPM of $67.84 are relatively high, which suggests that the cost to reach and engage users is significant.",
+          "**Recommendation**: Explore targeting options to refine the audience, potentially lowering the CPC and CPM. Consider adjusting bid strategies or testing different ad placements to find more cost-effective options.",
+          "**Click-Through Rate (CTR) Insight**:",
+          "The CTR of 2.24% is around the average for many industries but can be improved to drive more clicks relative to impressions.",
+          "**Recommendation**: A/B test different ad creatives and calls-to-action (CTAs) to see which resonates better with the target audience. This could potentially increase the CTR and drive more traffic for the same budget.",
+          "**Conversion Rate and Cost-Per-Acquisition (CPA)**:"
+        ],
+        "recommendations": [
+          "**Optimize High CPA Campaigns:**",
+          "**Review Audience Targeting:** Analyze the demographics, interests, and behaviors of the audiences in your high CPA campaigns. Refine targeting to focus on segments that have historically shown higher engagement and conversion rates.",
+          "**Adjust Bidding Strategy:** If using automatic bidding, switch to manual bidding to have better control over bid amounts. Experiment with lower bid caps to decrease the average CPA, but monitor closely to ensure it doesn't negatively impact campaign reach and conversions.",
+          "**Enhance Low CTR Campaigns:**",
+          "**Creative Refresh:** Update ad creatives that are underperforming with low CTR. Test new images or videos that are eye-catching and relevant to the target audience. Incorporate strong call-to-actions (CTAs) that clearly communicate what action you want the user to take.",
+          "**Ad Copy Optimization:** Rewrite ad copy to be more compelling and directly address the needs or interests of the target audience. Use persuasive language and include an urgent or exclusive offer to encourage clicks.",
+          "**Improve Low Conversion Rate Campaigns:**"
+        ],
+        "top_performers": [
+          "Campaign_2_education"
+        ],
+        "metrics": {
+          "total_impressions": 29657.0,
+          "total_clicks": 665.0,
+          "total_conversions": 62.0,
+          "total_spend": 2012.03,
+          "overall_ctr": 2.242303671983006,
+          "overall_conversion_rate": 9.323308270676693,
+          "overall_cpa": 32.45209677419355,
+          "overall_cpm": 67.84334221263109,
+          "average_cpc": 3.0256090225563907,
+          "num_campaigns": 1.0
+        }
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_cases": 3,
+    "successful_cases": 3,
+    "success_rate": 1.0
+  },
+  "total_test_cases": 3,
+  "successful_evaluations": 3
+}

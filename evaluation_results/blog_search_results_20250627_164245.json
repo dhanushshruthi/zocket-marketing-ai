@@ -1,0 +1,195 @@
+{
+  "individual_results": [
+    {
+      "test_case_id": 0,
+      "timestamp": "2025-06-27T16:42:22.051676",
+      "query": "Common mistakes in conversion optimization campaigns",
+      "agent_response": {
+        "total_results": 5,
+        "search_time_ms": 13678.84,
+        "suggested_queries": [
+          "How can I improve ad copy to boost conversion rates in Facebook and Google Ads?",
+          "What are effective performance metrics to track for optimizing summer sales campaigns?",
+          "What strategies are most successful for creative optimization in digital marketing campaigns?",
+          "How can analytics be used to identify and rectify common pitfalls in conversion optimization?"
+        ],
+        "results_summary": "Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score. These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use em"
+      },
+      "relevance_scores": {
+        "query_response_relevance": 0.39244574308395386,
+        "relevance_category": "not_relevant",
+        "max_context_relevance": 0.8376230001449585,
+        "avg_context_relevance": 0.7596327662467957,
+        "context_support_score": 0.7596327662467957
+      },
+      "hallucination_detection": {
+        "hallucination_rate": 0.6666666666666666,
+        "unsupported_sentences": [
+          "These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use emotional triggers, test different headlines, and incorporate social proof.",
+          "A/B testing different copy v"
+        ],
+        "sentence_scores": [
+          {
+            "sentence": "Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score.",
+            "max_support_score": 0.3468192517757416,
+            "is_supported": "True"
+          },
+          {
+            "sentence": "These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use emotional triggers, test different headlines, and incorporate social proof.",
+            "max_support_score": 0.16850008070468903,
+            "is_supported": "False"
+          },
+          {
+            "sentence": "A/B testing different copy v",
+            "max_support_score": 0.10961794853210449,
+            "is_supported": "False"
+          }
+        ],
+        "total_sentences": 3,
+        "supported_sentences": 1,
+        "confidence_level": "low_confidence"
+      },
+      "document_retrieval_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "true_positives": 0,
+        "false_positives": 5,
+        "false_negatives": 3,
+        "accuracy": 0.0
+      }
+    },
+    {
+      "test_case_id": 1,
+      "timestamp": "2025-06-27T16:42:34.524303",
+      "query": "Common mistakes in influencer marketing campaigns",
+      "agent_response": {
+        "total_results": 6,
+        "search_time_ms": 12292.17,
+        "suggested_queries": [
+          "How to measure the ROI of influencer marketing campaigns effectively?",
+          "What are best practices for setting the right tone in influencer marketing communications?",
+          "What strategies can be used to optimize ad copy for Facebook ads in influencer campaigns?",
+          "How can creative optimization techniques be applied to enhance summer sales promotions through influencer marketing?"
+        ],
+        "results_summary": "Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score. These metrics help optimize campaign effect Professional tone in marketing communications builds trust and credibility. Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints. P Creative improvement strategies for underperforming ads include testing new visuals, updating copy"
+      },
+      "relevance_scores": {
+        "query_response_relevance": 0.44661128520965576,
+        "relevance_category": "somewhat_relevant",
+        "max_context_relevance": 0.807462215423584,
+        "avg_context_relevance": 0.6919932961463928,
+        "context_support_score": 0.6919932961463928
+      },
+      "hallucination_detection": {
+        "hallucination_rate": 0.25,
+        "unsupported_sentences": [
+          "Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints."
+        ],
+        "sentence_scores": [
+          {
+            "sentence": "Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score.",
+            "max_support_score": 0.3067602515220642,
+            "is_supported": "True"
+          },
+          {
+            "sentence": "These metrics help optimize campaign effect Professional tone in marketing communications builds trust and credibility.",
+            "max_support_score": 0.4435698986053467,
+            "is_supported": "True"
+          },
+          {
+            "sentence": "Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints.",
+            "max_support_score": 0.14738988876342773,
+            "is_supported": "False"
+          },
+          {
+            "sentence": "P Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies",
+            "max_support_score": 0.3474021553993225,
+            "is_supported": "True"
+          }
+        ],
+        "total_sentences": 4,
+        "supported_sentences": 3,
+        "confidence_level": "medium_confidence"
+      },
+      "document_retrieval_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "true_positives": 0,
+        "false_positives": 6,
+        "false_negatives": 3,
+        "accuracy": 0.0
+      }
+    },
+    {
+      "test_case_id": 2,
+      "timestamp": "2025-06-27T16:42:45.724410",
+      "query": "video marketing case studies and examples",
+      "agent_response": {
+        "total_results": 5,
+        "search_time_ms": 11055.2,
+        "suggested_queries": [
+          "How can creative optimization techniques be applied to video marketing for summer sales?",
+          "What are effective strategies for using a professional tone in Facebook video ads?",
+          "What are some examples of successful casual tone video ads and their impact on viewer engagement?",
+          "How can ad copy be optimized in video marketing to improve conversion rates?"
+        ],
+        "results_summary": "Best practices for summer sale campaigns include creating urgency with limited-time offers, using bright and energetic visuals, targeting vacation-minded consumers, and leveraging social media for max Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Fun and casual tone in advertising appeals to younger demographics and lifestyle brands. Use conve"
+      },
+      "relevance_scores": {
+        "query_response_relevance": 0.42313212156295776,
+        "relevance_category": "somewhat_relevant",
+        "max_context_relevance": 0.8340314030647278,
+        "avg_context_relevance": 0.7096537947654724,
+        "context_support_score": 0.7096537947654724
+      },
+      "hallucination_detection": {
+        "hallucination_rate": 0.6666666666666666,
+        "unsupported_sentences": [
+          "Use conversational language, emojis, humor, and trendy references.",
+          "This tone works well for social media and co"
+        ],
+        "sentence_scores": [
+          {
+            "sentence": "Best practices for summer sale campaigns include creating urgency with limited-time offers, using bright and energetic visuals, targeting vacation-minded consumers, and leveraging social media for max Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Fun and casual tone in advertising appeals to younger demographics and lifestyle brands.",
+            "max_support_score": 0.4204370975494385,
+            "is_supported": "True"
+          },
+          {
+            "sentence": "Use conversational language, emojis, humor, and trendy references.",
+            "max_support_score": 0.08929279446601868,
+            "is_supported": "False"
+          },
+          {
+            "sentence": "This tone works well for social media and co",
+            "max_support_score": 0.18401828408241272,
+            "is_supported": "False"
+          }
+        ],
+        "total_sentences": 3,
+        "supported_sentences": 1,
+        "confidence_level": "low_confidence"
+      },
+      "document_retrieval_f1": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "true_positives": 0,
+        "false_positives": 5,
+        "false_negatives": 3,
+        "accuracy": 0.0
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_cases": 3,
+    "successful_cases": 3,
+    "success_rate": 1.0,
+    "avg_relevance_score": 0.4207297166188558,
+    "min_relevance_score": 0.39244574308395386,
+    "max_relevance_score": 0.44661128520965576
+  },
+  "total_test_cases": 3,
+  "successful_evaluations": 3
+}

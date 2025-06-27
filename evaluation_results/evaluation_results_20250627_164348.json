@@ -1,0 +1,535 @@
+{
+  "ad_performance": {
+    "individual_results": [
+      {
+        "test_case_id": 0,
+        "timestamp": "2025-06-27T16:41:04.791694",
+        "input_size": 1,
+        "agent_response": {
+          "summary": {
+            "total_campaigns": 1,
+            "total_spend": 1813.48,
+            "total_impressions": 84810.0,
+            "total_clicks": 1132.0,
+            "total_conversions": 128.0,
+            "overall_performance": {
+              "ctr": 1.33,
+              "conversion_rate": 11.31,
+              "cpa": 14.17,
+              "cpm": 21.38,
+              "cpc": 1.6
+            },
+            "campaign_performance_distribution": {
+              "best_ctr": 1.33,
+              "worst_ctr": 1.33,
+              "best_conversion_rate": 11.31,
+              "worst_conversion_rate": 11.31,
+              "lowest_cpa": 14.17,
+              "highest_cpa": 14.17
+            }
+          },
+          "insights": [
+            "**Click-Through Rate (CTR) Analysis:**",
+            "The campaign's CTR stands at 1.33%, which is relatively low, indicating that the ads may not be effectively capturing the audience's attention or are not targeted well.",
+            "**Recommendation:** Test different ad creatives and formats to identify more engaging content. Additionally, refine the targeting criteria to reach a more relevant audience that is likely to be interested in the SaaS product.",
+            "**Conversion Rate and Cost Per Acquisition (CPA):**",
+            "The conversion rate is commendably high at 11.31%, suggesting that once users click the ad, they are likely to convert. However, the CPA of $14.17, while reasonable, could potentially be lowered to improve ROI.",
+            "**Recommendation:** Implement A/B testing on landing pages to further optimize the conversion funnel. Focus on elements like call-to-action (CTA) buttons, page load speed, and form simplicity.",
+            "**Cost-Per-Mille (CPM) and Cost-Per-Click (CPC):**"
+          ],
+          "recommendations": [
+            "**Optimize High CPA Campaigns**:",
+            "**Review Audience Targeting**: Narrow down the audience to exclude low-performing segments. Utilize audience insights to refine targeting based on demographics, interests, and behaviors that correlate with higher conversion rates.",
+            "**Adjust Bidding Strategy**: Switch from broad automatic bidding to manual or target CPA bidding, setting a lower target CPA based on historical data that aligns more closely with your successful campaigns.",
+            "**Enhance Low CTR Campaigns**:",
+            "**Creative Refresh**: Update ad creatives that are underperforming. Test new images or videos that are vibrant and eye-catching. Include clear, compelling call-to-actions (CTAs) that resonate with the target audience.",
+            "**A/B Testing**: Implement A/B tests for different elements such as headlines, ad copy, and CTAs. This will help identify what resonates best with your audience and can significantly improve your CTR.",
+            "**Boost Low Conversion Rate Campaigns**:"
+          ],
+          "top_performers": [
+            "Campaign_0_saas"
+          ],
+          "metrics": {
+            "total_impressions": 84810.0,
+            "total_clicks": 1132.0,
+            "total_conversions": 128.0,
+            "total_spend": 1813.48,
+            "overall_ctr": 1.3347482608182997,
+            "overall_conversion_rate": 11.307420494699647,
+            "overall_cpa": 14.1678125,
+            "overall_cpm": 21.382855795307155,
+            "average_cpc": 1.6020141342756185,
+            "num_campaigns": 1.0
+          }
+        }
+      },
+      {
+        "test_case_id": 1,
+        "timestamp": "2025-06-27T16:41:35.021449",
+        "input_size": 1,
+        "agent_response": {
+          "summary": {
+            "total_campaigns": 1,
+            "total_spend": 17146.84,
+            "total_impressions": 89696.0,
+            "total_clicks": 5431.0,
+            "total_conversions": 468.0,
+            "overall_performance": {
+              "ctr": 6.05,
+              "conversion_rate": 8.62,
+              "cpa": 36.64,
+              "cpm": 191.17,
+              "cpc": 3.16
+            },
+            "campaign_performance_distribution": {
+              "best_ctr": 6.05,
+              "worst_ctr": 6.05,
+              "best_conversion_rate": 8.62,
+              "worst_conversion_rate": 8.62,
+              "lowest_cpa": 36.64,
+              "highest_cpa": 36.64
+            }
+          },
+          "insights": [
+            "**High Cost-Per-Mille (CPM) and Cost-Per-Click (CPC) Analysis**:",
+            "The CPM ($191.17) and CPC ($3.16) are relatively high, suggesting that the ad placements might be in highly competitive spaces or targeting expensive audiences.",
+            "**Recommendation**: Consider testing different audience segments and ad placements to find less competitive, yet still effective, options that could lower these costs.",
+            "**Click-Through Rate (CTR) and Conversion Rate Performance**:",
+            "The CTR of 6.05% is quite robust, indicating that the ad creative and messaging are resonating well with the target audience.",
+            "The conversion rate of 8.62% is also strong, suggesting that the landing page and offer are compelling.",
+            "**Recommendation**: Since both CTR and conversion rates are performing well, focus on maintaining or slightly tweaking the current ad creative and landing page elements to continue driving engagement and conversions."
+          ],
+          "recommendations": [
+            "**Optimize High CPA Campaigns:**",
+            "**Review and Adjust Bidding Strategies:** Examine the bidding strategies being used in high CPA campaigns. If using cost-per-click (CPC) bidding, consider switching to cost-per-acquisition (CPA) bidding to better control costs relative to conversion goals.",
+            "**Refine Ad Targeting:** Narrow down the target audience based on demographic data, interests, and behaviors that correlate with higher conversion rates. Use audience insights tools to identify characteristics of top-performing segments and exclude low-performing ones.",
+            "**Enhance Low CTR Campaigns:**",
+            "**Improve Ad Creatives:** Test new images or video content that are visually engaging and relevant to the target audience. Incorporate strong call-to-actions (CTAs) that clearly communicate the value proposition.",
+            "**Optimize Ad Copy:** Experiment with different headlines and body text that speak directly to the audience\u2019s needs and pain points. Use A/B testing to determine which messages resonate best with your audience.",
+            "**Boost Low Conversion Rate Campaigns:**"
+          ],
+          "top_performers": [
+            "Campaign_1_ecommerce"
+          ],
+          "metrics": {
+            "total_impressions": 89696.0,
+            "total_clicks": 5431.0,
+            "total_conversions": 468.0,
+            "total_spend": 17146.84,
+            "overall_ctr": 6.054896539422048,
+            "overall_conversion_rate": 8.617197569508377,
+            "overall_cpa": 36.63854700854701,
+            "overall_cpm": 191.16616125579736,
+            "average_cpc": 3.1572159823236974,
+            "num_campaigns": 1.0
+          }
+        }
+      },
+      {
+        "test_case_id": 2,
+        "timestamp": "2025-06-27T16:42:04.664846",
+        "input_size": 1,
+        "agent_response": {
+          "summary": {
+            "total_campaigns": 1,
+            "total_spend": 2012.03,
+            "total_impressions": 29657.0,
+            "total_clicks": 665.0,
+            "total_conversions": 62.0,
+            "overall_performance": {
+              "ctr": 2.24,
+              "conversion_rate": 9.32,
+              "cpa": 32.45,
+              "cpm": 67.84,
+              "cpc": 3.03
+            },
+            "campaign_performance_distribution": {
+              "best_ctr": 2.24,
+              "worst_ctr": 2.24,
+              "best_conversion_rate": 9.32,
+              "worst_conversion_rate": 9.32,
+              "lowest_cpa": 32.45,
+              "highest_cpa": 32.45
+            }
+          },
+          "insights": [
+            "**High Cost-Per-Click (CPC) and Cost-Per-Mille (CPM)**:",
+            "The average CPC of $3.03 and CPM of $67.84 are relatively high, which suggests that the cost to reach and engage users is significant.",
+            "**Recommendation**: Explore targeting options to refine the audience, potentially lowering the CPC and CPM. Consider adjusting bid strategies or testing different ad placements to find more cost-effective options.",
+            "**Click-Through Rate (CTR) Insight**:",
+            "The CTR of 2.24% is around the average for many industries but can be improved to drive more clicks relative to impressions.",
+            "**Recommendation**: A/B test different ad creatives and calls-to-action (CTAs) to see which resonates better with the target audience. This could potentially increase the CTR and drive more traffic for the same budget.",
+            "**Conversion Rate and Cost-Per-Acquisition (CPA)**:"
+          ],
+          "recommendations": [
+            "**Optimize High CPA Campaigns:**",
+            "**Review Audience Targeting:** Analyze the demographics, interests, and behaviors of the audiences in your high CPA campaigns. Refine targeting to focus on segments that have historically shown higher engagement and conversion rates.",
+            "**Adjust Bidding Strategy:** If using automatic bidding, switch to manual bidding to have better control over bid amounts. Experiment with lower bid caps to decrease the average CPA, but monitor closely to ensure it doesn't negatively impact campaign reach and conversions.",
+            "**Enhance Low CTR Campaigns:**",
+            "**Creative Refresh:** Update ad creatives that are underperforming with low CTR. Test new images or videos that are eye-catching and relevant to the target audience. Incorporate strong call-to-actions (CTAs) that clearly communicate what action you want the user to take.",
+            "**Ad Copy Optimization:** Rewrite ad copy to be more compelling and directly address the needs or interests of the target audience. Use persuasive language and include an urgent or exclusive offer to encourage clicks.",
+            "**Improve Low Conversion Rate Campaigns:**"
+          ],
+          "top_performers": [
+            "Campaign_2_education"
+          ],
+          "metrics": {
+            "total_impressions": 29657.0,
+            "total_clicks": 665.0,
+            "total_conversions": 62.0,
+            "total_spend": 2012.03,
+            "overall_ctr": 2.242303671983006,
+            "overall_conversion_rate": 9.323308270676693,
+            "overall_cpa": 32.45209677419355,
+            "overall_cpm": 67.84334221263109,
+            "average_cpc": 3.0256090225563907,
+            "num_campaigns": 1.0
+          }
+        }
+      }
+    ],
+    "aggregate_metrics": {
+      "total_cases": 3,
+      "successful_cases": 3,
+      "success_rate": 1.0
+    },
+    "total_test_cases": 3,
+    "successful_evaluations": 3
+  },
+  "blog_search": {
+    "individual_results": [
+      {
+        "test_case_id": 0,
+        "timestamp": "2025-06-27T16:42:22.051676",
+        "query": "Common mistakes in conversion optimization campaigns",
+        "agent_response": {
+          "total_results": 5,
+          "search_time_ms": 13678.84,
+          "suggested_queries": [
+            "How can I improve ad copy to boost conversion rates in Facebook and Google Ads?",
+            "What are effective performance metrics to track for optimizing summer sales campaigns?",
+            "What strategies are most successful for creative optimization in digital marketing campaigns?",
+            "How can analytics be used to identify and rectify common pitfalls in conversion optimization?"
+          ],
+          "results_summary": "Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score. These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use em"
+        },
+        "relevance_scores": {
+          "query_response_relevance": 0.39244574308395386,
+          "relevance_category": "not_relevant",
+          "max_context_relevance": 0.8376230001449585,
+          "avg_context_relevance": 0.7596327662467957,
+          "context_support_score": 0.7596327662467957
+        },
+        "hallucination_detection": {
+          "hallucination_rate": 0.6666666666666666,
+          "unsupported_sentences": [
+            "These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use emotional triggers, test different headlines, and incorporate social proof.",
+            "A/B testing different copy v"
+          ],
+          "sentence_scores": [
+            {
+              "sentence": "Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score.",
+              "max_support_score": 0.3468192517757416,
+              "is_supported": "True"
+            },
+            {
+              "sentence": "These metrics help optimize campaign effect Effective ad copy for Facebook campaigns should be concise, include a clear call-to-action, use emotional triggers, test different headlines, and incorporate social proof.",
+              "max_support_score": 0.16850008070468903,
+              "is_supported": "False"
+            },
+            {
+              "sentence": "A/B testing different copy v",
+              "max_support_score": 0.10961794853210449,
+              "is_supported": "False"
+            }
+          ],
+          "total_sentences": 3,
+          "supported_sentences": 1,
+          "confidence_level": "low_confidence"
+        },
+        "document_retrieval_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "true_positives": 0,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "test_case_id": 1,
+        "timestamp": "2025-06-27T16:42:34.524303",
+        "query": "Common mistakes in influencer marketing campaigns",
+        "agent_response": {
+          "total_results": 6,
+          "search_time_ms": 12292.17,
+          "suggested_queries": [
+            "How to measure the ROI of influencer marketing campaigns effectively?",
+            "What are best practices for setting the right tone in influencer marketing communications?",
+            "What strategies can be used to optimize ad copy for Facebook ads in influencer campaigns?",
+            "How can creative optimization techniques be applied to enhance summer sales promotions through influencer marketing?"
+          ],
+          "results_summary": "Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score. These metrics help optimize campaign effect Professional tone in marketing communications builds trust and credibility. Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints. P Creative improvement strategies for underperforming ads include testing new visuals, updating copy"
+        },
+        "relevance_scores": {
+          "query_response_relevance": 0.44661128520965576,
+          "relevance_category": "somewhat_relevant",
+          "max_context_relevance": 0.807462215423584,
+          "avg_context_relevance": 0.6919932961463928,
+          "context_support_score": 0.6919932961463928
+        },
+        "hallucination_detection": {
+          "hallucination_rate": 0.25,
+          "unsupported_sentences": [
+            "Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints."
+          ],
+          "sentence_scores": [
+            {
+              "sentence": "Ad performance metrics to track include click-through rate (CTR), conversion rate, cost per acquisition (CPA), return on ad spend (ROAS), and quality score.",
+              "max_support_score": 0.3067602515220642,
+              "is_supported": "True"
+            },
+            {
+              "sentence": "These metrics help optimize campaign effect Professional tone in marketing communications builds trust and credibility.",
+              "max_support_score": 0.4435698986053467,
+              "is_supported": "True"
+            },
+            {
+              "sentence": "Use formal language, avoid slang, focus on benefits rather than features, and maintain consistency across all touchpoints.",
+              "max_support_score": 0.14738988876342773,
+              "is_supported": "False"
+            },
+            {
+              "sentence": "P Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies",
+              "max_support_score": 0.3474021553993225,
+              "is_supported": "True"
+            }
+          ],
+          "total_sentences": 4,
+          "supported_sentences": 3,
+          "confidence_level": "medium_confidence"
+        },
+        "document_retrieval_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "true_positives": 0,
+          "false_positives": 6,
+          "false_negatives": 3,
+          "accuracy": 0.0
+        }
+      },
+      {
+        "test_case_id": 2,
+        "timestamp": "2025-06-27T16:42:45.724410",
+        "query": "video marketing case studies and examples",
+        "agent_response": {
+          "total_results": 5,
+          "search_time_ms": 11055.2,
+          "suggested_queries": [
+            "How can creative optimization techniques be applied to video marketing for summer sales?",
+            "What are effective strategies for using a professional tone in Facebook video ads?",
+            "What are some examples of successful casual tone video ads and their impact on viewer engagement?",
+            "How can ad copy be optimized in video marketing to improve conversion rates?"
+          ],
+          "results_summary": "Best practices for summer sale campaigns include creating urgency with limited-time offers, using bright and energetic visuals, targeting vacation-minded consumers, and leveraging social media for max Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Fun and casual tone in advertising appeals to younger demographics and lifestyle brands. Use conve"
+        },
+        "relevance_scores": {
+          "query_response_relevance": 0.42313212156295776,
+          "relevance_category": "somewhat_relevant",
+          "max_context_relevance": 0.8340314030647278,
+          "avg_context_relevance": 0.7096537947654724,
+          "context_support_score": 0.7096537947654724
+        },
+        "hallucination_detection": {
+          "hallucination_rate": 0.6666666666666666,
+          "unsupported_sentences": [
+            "Use conversational language, emojis, humor, and trendy references.",
+            "This tone works well for social media and co"
+          ],
+          "sentence_scores": [
+            {
+              "sentence": "Best practices for summer sale campaigns include creating urgency with limited-time offers, using bright and energetic visuals, targeting vacation-minded consumers, and leveraging social media for max Creative improvement strategies for underperforming ads include testing new visuals, updating copy, changing call-to-action buttons, adjusting targeting parameters, and analyzing competitor strategies Fun and casual tone in advertising appeals to younger demographics and lifestyle brands.",
+              "max_support_score": 0.4204370975494385,
+              "is_supported": "True"
+            },
+            {
+              "sentence": "Use conversational language, emojis, humor, and trendy references.",
+              "max_support_score": 0.08929279446601868,
+              "is_supported": "False"
+            },
+            {
+              "sentence": "This tone works well for social media and co",
+              "max_support_score": 0.18401828408241272,
+              "is_supported": "False"
+            }
+          ],
+          "total_sentences": 3,
+          "supported_sentences": 1,
+          "confidence_level": "low_confidence"
+        },
+        "document_retrieval_f1": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "true_positives": 0,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "accuracy": 0.0
+        }
+      }
+    ],
+    "aggregate_metrics": {
+      "total_cases": 3,
+      "successful_cases": 3,
+      "success_rate": 1.0,
+      "avg_relevance_score": 0.4207297166188558,
+      "min_relevance_score": 0.39244574308395386,
+      "max_relevance_score": 0.44661128520965576
+    },
+    "total_test_cases": 3,
+    "successful_evaluations": 3
+  },
+  "ad_rewriter": {
+    "individual_results": [
+      {
+        "test_case_id": 0,
+        "timestamp": "2025-06-27T16:43:06.926374",
+        "original_text": "Get 50% off your first purchase this week only.",
+        "target_tone": "fun",
+        "target_platform": "facebook",
+        "agent_response": {
+          "rewritten_text": "\ud83c\udf89 Whoa, hold the phone! \ud83d\udcf1 Are you ready for a deal that'll make your wallet jump with joy? \ud83d\udd7a This week ONLY, we're tossing a whopping 50% OFF your first purchase your way! \ud83d\ude80\n\nWhy stay ordinary when you can shop EXTRAordinary? \ud83d\ude1c Dive into our treasure trove of goodies and pick your favorites without breaking the bank. It\u2019s shopping o\u2019clock and your cart is waiting!\n\nAnd hey, why keep the fun to yourself? Share the love, tag your friends, and spread the word. \ud83d\udde3\ufe0f Let's make this shopping spree a party! \ud83c\udf88\n\nDon\u2019t walk, RUN \ud83c\udfc3\ud83d\udca8 \u2014 this deal\u2019s too good to miss! Click that shiny 'Shop Now' button and let the good times roll! \ud83d\uded2 #ShoppingFiesta #HalfPriceHappiness \ud83c\udf8a",
+          "improvements": [
+            "Enhances tone alignment by incorporating playful emojis and lively language that resonate with a fun, casual Facebook audience.",
+            "Optimizes for the platform by encouraging social interaction through tagging friends and sharing, which is effective on Facebook's community-oriented environment.",
+            "Increases engagement by using interactive language like \"Whoa, hold the phone!\" and rhetorical questions, which draw the reader in and maintain their attention.",
+            "Boosts conversion elements by creating a sense of urgency with phrases like \"This week ONLY\" and \"Don\u2019t walk, RUN,\" prompting quick action.",
+            "Improves clarity and impact by vividly describing the offer (\"a whopping 50% OFF\") and the excitement of shopping (\"make your wallet jump with joy\"), making the deal more tangible and enticing.",
+            "Enhances call-to-action effectiveness by using a direct and visually appealing prompt (\"Click that shiny 'Shop Now' button\"), which is more likely to lead to clicks and conversions."
+          ],
+          "platform_tips": [
+            "**Leverage Visual Content**: Integrate eye-catching images or a vibrant video clip of the products in action to complement the text. This aligns with Facebook's preference for visual storytelling and can increase engagement rates.",
+            "**Utilize Facebook's Polling or Reaction Features**: Engage your audience by asking them to vote on their favorite product using Facebook's polling feature or react to the post. This interactive element can boost visibility and foster community interaction.",
+            "**Optimize for Mobile Viewing**: Ensure that your ad text and visuals are optimized for mobile users, as a significant portion of Facebook traffic comes from mobile devices. Keep key messages and CTAs front and center to accommodate smaller screens.",
+            "**Incorporate Social Proof**: Add a line about how many customers have already taken advantage of the offer or include customer testimonials. This builds credibility and taps into the audience's FOMO (fear of missing out), enhancing the persuasive power of the ad."
+          ],
+          "alternative_versions": [
+            "\ud83c\udf89 Who doesn't love a bargain? Snag 50% off your first purchase! But hurry, this deal vanishes in a week! \ud83d\udd52 Click 'Learn More' to grab your discount!",
+            "Stop paying full price! Get smart with your shopping. \ud83d\udecd\ufe0f Save 50% on your first purchase. It's this week or never! Tap 'Shop Now' and start saving!",
+            "Ready to feel the joy of half-price shopping? \ud83c\udf1f For one week only, get 50% off your first order. Dive into savings\u2014click 'Buy Now' and let the fun begin!"
+          ]
+        },
+        "content_quality": {
+          "word_count": 121,
+          "sentence_count": 12,
+          "avg_sentence_length": 10.083333333333334,
+          "readability_score": 84.29752066115702,
+          "has_call_to_action": true,
+          "has_urgency_indicators": true,
+          "complexity_ratio": 0.15702479338842976
+        },
+        "bleu_score": 2.0921802032618696e-155,
+        "semantic_preservation": {
+          "query_response_relevance": 0.4130036234855652,
+          "relevance_category": "somewhat_relevant"
+        }
+      },
+      {
+        "test_case_id": 1,
+        "timestamp": "2025-06-27T16:43:35.591691",
+        "original_text": "Boost your productivity with our cutting-edge tool.",
+        "target_tone": "professional",
+        "target_platform": "google",
+        "agent_response": {
+          "rewritten_text": "Enhance your efficiency with our advanced productivity software. Experience proven results and industry-leading tools designed for optimal performance.",
+          "improvements": [
+            "**Enhances tone alignment**: The rewritten version adopts a more professional and sophisticated vocabulary (\"Enhance your efficiency,\" \"advanced productivity software,\" \"industry-leading tools\") which is more suitable for a Google ad targeting business professionals.",
+            "**Improves platform optimization**: The expanded detail (\"Experience proven results and industry-leading tools designed for optimal performance\") utilizes Google's preference for slightly longer and informative ad copy that can improve SEO and quality score.",
+            "**Increases engagement factors**: By including phrases like \"Experience proven results,\" the rewritten ad invites the audience to engage with the software on a personal success level, making the interaction more appealing.",
+            "**Strengthens conversion elements**: The use of specific terms such as \"advanced productivity software\" and \"optimal performance\" directly addresses the user's desire to improve efficiency, which can lead to higher conversion rates as it directly appeals to their needs.",
+            "**Boosts clarity and impact**: The original ad is vague (\"cutting-edge tool\"), whereas the rewritten version clearly specifies what is being offered (\"productivity software\") and the benefits (\"designed for optimal performance\"), making the message more impactful and understandable.",
+            "**Enhances call-to-action effectiveness**: Although a direct call-to-action is not included in the rewritten text, the invitation to \"Experience proven results\" implicitly suggests a trial or demonstration, which can effectively lead to user action. However, adding a more explicit call-to-action could further improve this aspect."
+          ],
+          "platform_tips": [
+            "**Keyword Optimization**: Integrate specific keywords related to productivity software, such as \"productivity software\" or \"performance tools,\" into the ad text to improve visibility and relevance. Example: \"Boost your productivity with our top-rated software. See proven results with our performance-enhancing tools.\"",
+            "**Clear Value Proposition**: Refine the ad text to emphasize the unique benefits succinctly. Highlight what sets your software apart from competitors. Example: \"Skyrocket efficiency with our productivity software\u2014trusted by industry leaders for optimal results.\"",
+            "**Local Relevance**: If applicable, include location-based keywords to attract local searches. This can increase the relevance for users searching for solutions in their area. Example: \"Elevate your NYC team's efficiency with our advanced productivity tools. Experience local, proven results!\"",
+            "**Direct CTA**: Use a strong, action-oriented call-to-action that compels users to act immediately. Ensure it\u2019s clear what the user will get by clicking on the ad. Example: \"Try Our Leading Productivity Tools Today\u2014See the Difference!\""
+          ],
+          "alternative_versions": [
+            "\"Elevate Your Work Efficiency: Discover the advanced features of our productivity tool. Act now to transform your workflow!\"",
+            "\"Maximize Your Professional Output with our innovative tool. Experience unmatched efficiency\u2014Upgrade today!\"",
+            "\"Need More Hours in Your Day? Our tool helps professionals achieve more with less effort. Try it now and see the difference!\""
+          ]
+        },
+        "content_quality": {
+          "word_count": 18,
+          "sentence_count": 2,
+          "avg_sentence_length": 9.0,
+          "readability_score": 38.888888888888886,
+          "has_call_to_action": false,
+          "has_urgency_indicators": false,
+          "complexity_ratio": 0.6111111111111112
+        },
+        "bleu_score": 8.614911585158347e-232,
+        "semantic_preservation": {
+          "query_response_relevance": 0.7116816639900208,
+          "relevance_category": "relevant"
+        }
+      },
+      {
+        "test_case_id": 2,
+        "timestamp": "2025-06-27T16:43:48.841936",
+        "original_text": "Experience the difference with our premium service.",
+        "target_tone": "professional",
+        "target_platform": "tiktok",
+        "agent_response": {
+          "rewritten_text": "Discover unparalleled excellence with our distinguished service. Join a community that values premium, results-driven solutions. #ExperienceTheDifference #PremiumQuality",
+          "improvements": [
+            "Enhances tone alignment: The rewritten ad uses more sophisticated language (\"unparalleled excellence,\" \"distinguished service\") which better aligns with a professional tone.",
+            "Boosts platform optimization: Incorporates hashtags (#ExperienceTheDifference #PremiumQuality), which are crucial for visibility and engagement on TikTok.",
+            "Increases engagement factors: Invites the audience to \"Join a community,\" fostering a sense of belonging and interaction, which is highly effective on social platforms like TikTok.",
+            "Strengthens conversion elements: The phrase \"results-driven solutions\" directly addresses the outcomes and benefits, appealing to a professional audience focused on results.",
+            "Improves clarity and impact: The use of descriptive adjectives (\"unparalleled,\" \"distinguished\") enhances the clarity and impact of the message by clearly differentiating the service\u2019s quality.",
+            "Enhances call-to-action effectiveness: The invitation to \"Join a community\" acts as a soft call-to-action, encouraging users to engage with the brand beyond just acknowledging its message."
+          ],
+          "platform_tips": [
+            "**Leverage Trending Sounds:** Incorporate popular TikTok sounds or music that resonates with Gen Z to increase the entertainment value and engagement rates of your ad.",
+            "**Showcase Authenticity with User-Generated Content:** Feature real customer testimonials or user-generated content demonstrating your service to enhance authenticity and trust among a younger audience.",
+            "**Utilize Hashtags Strategically:** While #ExperienceTheDifference and #PremiumQuality are good, consider adding trending hashtags relevant to your service to expand reach and tap into current conversations.",
+            "**Optimize for Mobile Viewing:** Ensure your video ad is visually engaging and text overlays are readable on mobile devices. Keep key messages concise and at the beginning to capture attention quickly."
+          ],
+          "alternative_versions": [
+            "\"Elevate your standards. Discover our premium service that sets you apart. Ready to upgrade? Swipe up now!\"",
+            "\"Why settle for less? Experience top-tier service crafted for those who expect the best. Tap to learn more!\"",
+            "\"Unlock the premium experience. Our exceptional service is designed to exceed your expectations. Click here to join the elite.\""
+          ]
+        },
+        "content_quality": {
+          "word_count": 17,
+          "sentence_count": 3,
+          "avg_sentence_length": 5.666666666666667,
+          "readability_score": 35.294117647058826,
+          "has_call_to_action": false,
+          "has_urgency_indicators": false,
+          "complexity_ratio": 0.6470588235294118
+        },
+        "bleu_score": 8.412065649527267e-232,
+        "semantic_preservation": {
+          "query_response_relevance": 0.5656269788742065,
+          "relevance_category": "somewhat_relevant"
+        }
+      }
+    ],
+    "aggregate_metrics": {
+      "total_cases": 3,
+      "successful_cases": 3,
+      "success_rate": 1.0,
+      "avg_bleu_score": 6.973934010872898e-156
+    },
+    "total_test_cases": 3,
+    "successful_evaluations": 3
+  }
+}

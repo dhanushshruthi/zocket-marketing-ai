@@ -1,0 +1,141 @@
+{
+  "individual_results": [
+    {
+      "test_case_id": 0,
+      "timestamp": "2025-06-27T16:43:06.926374",
+      "original_text": "Get 50% off your first purchase this week only.",
+      "target_tone": "fun",
+      "target_platform": "facebook",
+      "agent_response": {
+        "rewritten_text": "\ud83c\udf89 Whoa, hold the phone! \ud83d\udcf1 Are you ready for a deal that'll make your wallet jump with joy? \ud83d\udd7a This week ONLY, we're tossing a whopping 50% OFF your first purchase your way! \ud83d\ude80\n\nWhy stay ordinary when you can shop EXTRAordinary? \ud83d\ude1c Dive into our treasure trove of goodies and pick your favorites without breaking the bank. It\u2019s shopping o\u2019clock and your cart is waiting!\n\nAnd hey, why keep the fun to yourself? Share the love, tag your friends, and spread the word. \ud83d\udde3\ufe0f Let's make this shopping spree a party! \ud83c\udf88\n\nDon\u2019t walk, RUN \ud83c\udfc3\ud83d\udca8 \u2014 this deal\u2019s too good to miss! Click that shiny 'Shop Now' button and let the good times roll! \ud83d\uded2 #ShoppingFiesta #HalfPriceHappiness \ud83c\udf8a",
+        "improvements": [
+          "Enhances tone alignment by incorporating playful emojis and lively language that resonate with a fun, casual Facebook audience.",
+          "Optimizes for the platform by encouraging social interaction through tagging friends and sharing, which is effective on Facebook's community-oriented environment.",
+          "Increases engagement by using interactive language like \"Whoa, hold the phone!\" and rhetorical questions, which draw the reader in and maintain their attention.",
+          "Boosts conversion elements by creating a sense of urgency with phrases like \"This week ONLY\" and \"Don\u2019t walk, RUN,\" prompting quick action.",
+          "Improves clarity and impact by vividly describing the offer (\"a whopping 50% OFF\") and the excitement of shopping (\"make your wallet jump with joy\"), making the deal more tangible and enticing.",
+          "Enhances call-to-action effectiveness by using a direct and visually appealing prompt (\"Click that shiny 'Shop Now' button\"), which is more likely to lead to clicks and conversions."
+        ],
+        "platform_tips": [
+          "**Leverage Visual Content**: Integrate eye-catching images or a vibrant video clip of the products in action to complement the text. This aligns with Facebook's preference for visual storytelling and can increase engagement rates.",
+          "**Utilize Facebook's Polling or Reaction Features**: Engage your audience by asking them to vote on their favorite product using Facebook's polling feature or react to the post. This interactive element can boost visibility and foster community interaction.",
+          "**Optimize for Mobile Viewing**: Ensure that your ad text and visuals are optimized for mobile users, as a significant portion of Facebook traffic comes from mobile devices. Keep key messages and CTAs front and center to accommodate smaller screens.",
+          "**Incorporate Social Proof**: Add a line about how many customers have already taken advantage of the offer or include customer testimonials. This builds credibility and taps into the audience's FOMO (fear of missing out), enhancing the persuasive power of the ad."
+        ],
+        "alternative_versions": [
+          "\ud83c\udf89 Who doesn't love a bargain? Snag 50% off your first purchase! But hurry, this deal vanishes in a week! \ud83d\udd52 Click 'Learn More' to grab your discount!",
+          "Stop paying full price! Get smart with your shopping. \ud83d\udecd\ufe0f Save 50% on your first purchase. It's this week or never! Tap 'Shop Now' and start saving!",
+          "Ready to feel the joy of half-price shopping? \ud83c\udf1f For one week only, get 50% off your first order. Dive into savings\u2014click 'Buy Now' and let the fun begin!"
+        ]
+      },
+      "content_quality": {
+        "word_count": 121,
+        "sentence_count": 12,
+        "avg_sentence_length": 10.083333333333334,
+        "readability_score": 84.29752066115702,
+        "has_call_to_action": true,
+        "has_urgency_indicators": true,
+        "complexity_ratio": 0.15702479338842976
+      },
+      "bleu_score": 2.0921802032618696e-155,
+      "semantic_preservation": {
+        "query_response_relevance": 0.4130036234855652,
+        "relevance_category": "somewhat_relevant"
+      }
+    },
+    {
+      "test_case_id": 1,
+      "timestamp": "2025-06-27T16:43:35.591691",
+      "original_text": "Boost your productivity with our cutting-edge tool.",
+      "target_tone": "professional",
+      "target_platform": "google",
+      "agent_response": {
+        "rewritten_text": "Enhance your efficiency with our advanced productivity software. Experience proven results and industry-leading tools designed for optimal performance.",
+        "improvements": [
+          "**Enhances tone alignment**: The rewritten version adopts a more professional and sophisticated vocabulary (\"Enhance your efficiency,\" \"advanced productivity software,\" \"industry-leading tools\") which is more suitable for a Google ad targeting business professionals.",
+          "**Improves platform optimization**: The expanded detail (\"Experience proven results and industry-leading tools designed for optimal performance\") utilizes Google's preference for slightly longer and informative ad copy that can improve SEO and quality score.",
+          "**Increases engagement factors**: By including phrases like \"Experience proven results,\" the rewritten ad invites the audience to engage with the software on a personal success level, making the interaction more appealing.",
+          "**Strengthens conversion elements**: The use of specific terms such as \"advanced productivity software\" and \"optimal performance\" directly addresses the user's desire to improve efficiency, which can lead to higher conversion rates as it directly appeals to their needs.",
+          "**Boosts clarity and impact**: The original ad is vague (\"cutting-edge tool\"), whereas the rewritten version clearly specifies what is being offered (\"productivity software\") and the benefits (\"designed for optimal performance\"), making the message more impactful and understandable.",
+          "**Enhances call-to-action effectiveness**: Although a direct call-to-action is not included in the rewritten text, the invitation to \"Experience proven results\" implicitly suggests a trial or demonstration, which can effectively lead to user action. However, adding a more explicit call-to-action could further improve this aspect."
+        ],
+        "platform_tips": [
+          "**Keyword Optimization**: Integrate specific keywords related to productivity software, such as \"productivity software\" or \"performance tools,\" into the ad text to improve visibility and relevance. Example: \"Boost your productivity with our top-rated software. See proven results with our performance-enhancing tools.\"",
+          "**Clear Value Proposition**: Refine the ad text to emphasize the unique benefits succinctly. Highlight what sets your software apart from competitors. Example: \"Skyrocket efficiency with our productivity software\u2014trusted by industry leaders for optimal results.\"",
+          "**Local Relevance**: If applicable, include location-based keywords to attract local searches. This can increase the relevance for users searching for solutions in their area. Example: \"Elevate your NYC team's efficiency with our advanced productivity tools. Experience local, proven results!\"",
+          "**Direct CTA**: Use a strong, action-oriented call-to-action that compels users to act immediately. Ensure it\u2019s clear what the user will get by clicking on the ad. Example: \"Try Our Leading Productivity Tools Today\u2014See the Difference!\""
+        ],
+        "alternative_versions": [
+          "\"Elevate Your Work Efficiency: Discover the advanced features of our productivity tool. Act now to transform your workflow!\"",
+          "\"Maximize Your Professional Output with our innovative tool. Experience unmatched efficiency\u2014Upgrade today!\"",
+          "\"Need More Hours in Your Day? Our tool helps professionals achieve more with less effort. Try it now and see the difference!\""
+        ]
+      },
+      "content_quality": {
+        "word_count": 18,
+        "sentence_count": 2,
+        "avg_sentence_length": 9.0,
+        "readability_score": 38.888888888888886,
+        "has_call_to_action": false,
+        "has_urgency_indicators": false,
+        "complexity_ratio": 0.6111111111111112
+      },
+      "bleu_score": 8.614911585158347e-232,
+      "semantic_preservation": {
+        "query_response_relevance": 0.7116816639900208,
+        "relevance_category": "relevant"
+      }
+    },
+    {
+      "test_case_id": 2,
+      "timestamp": "2025-06-27T16:43:48.841936",
+      "original_text": "Experience the difference with our premium service.",
+      "target_tone": "professional",
+      "target_platform": "tiktok",
+      "agent_response": {
+        "rewritten_text": "Discover unparalleled excellence with our distinguished service. Join a community that values premium, results-driven solutions. #ExperienceTheDifference #PremiumQuality",
+        "improvements": [
+          "Enhances tone alignment: The rewritten ad uses more sophisticated language (\"unparalleled excellence,\" \"distinguished service\") which better aligns with a professional tone.",
+          "Boosts platform optimization: Incorporates hashtags (#ExperienceTheDifference #PremiumQuality), which are crucial for visibility and engagement on TikTok.",
+          "Increases engagement factors: Invites the audience to \"Join a community,\" fostering a sense of belonging and interaction, which is highly effective on social platforms like TikTok.",
+          "Strengthens conversion elements: The phrase \"results-driven solutions\" directly addresses the outcomes and benefits, appealing to a professional audience focused on results.",
+          "Improves clarity and impact: The use of descriptive adjectives (\"unparalleled,\" \"distinguished\") enhances the clarity and impact of the message by clearly differentiating the service\u2019s quality.",
+          "Enhances call-to-action effectiveness: The invitation to \"Join a community\" acts as a soft call-to-action, encouraging users to engage with the brand beyond just acknowledging its message."
+        ],
+        "platform_tips": [
+          "**Leverage Trending Sounds:** Incorporate popular TikTok sounds or music that resonates with Gen Z to increase the entertainment value and engagement rates of your ad.",
+          "**Showcase Authenticity with User-Generated Content:** Feature real customer testimonials or user-generated content demonstrating your service to enhance authenticity and trust among a younger audience.",
+          "**Utilize Hashtags Strategically:** While #ExperienceTheDifference and #PremiumQuality are good, consider adding trending hashtags relevant to your service to expand reach and tap into current conversations.",
+          "**Optimize for Mobile Viewing:** Ensure your video ad is visually engaging and text overlays are readable on mobile devices. Keep key messages concise and at the beginning to capture attention quickly."
+        ],
+        "alternative_versions": [
+          "\"Elevate your standards. Discover our premium service that sets you apart. Ready to upgrade? Swipe up now!\"",
+          "\"Why settle for less? Experience top-tier service crafted for those who expect the best. Tap to learn more!\"",
+          "\"Unlock the premium experience. Our exceptional service is designed to exceed your expectations. Click here to join the elite.\""
+        ]
+      },
+      "content_quality": {
+        "word_count": 17,
+        "sentence_count": 3,
+        "avg_sentence_length": 5.666666666666667,
+        "readability_score": 35.294117647058826,
+        "has_call_to_action": false,
+        "has_urgency_indicators": false,
+        "complexity_ratio": 0.6470588235294118
+      },
+      "bleu_score": 8.412065649527267e-232,
+      "semantic_preservation": {
+        "query_response_relevance": 0.5656269788742065,
+        "relevance_category": "somewhat_relevant"
+      }
+    }
+  ],
+  "aggregate_metrics": {
+    "total_cases": 3,
+    "successful_cases": 3,
+    "success_rate": 1.0,
+    "avg_bleu_score": 6.973934010872898e-156
+  },
+  "total_test_cases": 3,
+  "successful_evaluations": 3
+}

@@ -1,0 +1,46 @@
+{
+  "evaluation_summary": {
+    "timestamp": "2025-06-27T16:43:48.897348",
+    "agents_evaluated": [
+      "ad_performance",
+      "blog_search",
+      "ad_rewriter"
+    ],
+    "total_test_cases": 9,
+    "overall_success_rate": 1.0
+  },
+  "agent_performance": {
+    "ad_performance": {
+      "performance_level": "excellent",
+      "success_rate": 1.0,
+      "key_metrics": {
+        "total_cases": 3,
+        "successful_cases": 3,
+        "success_rate": 1.0
+      }
+    },
+    "blog_search": {
+      "performance_level": "excellent",
+      "success_rate": 1.0,
+      "key_metrics": {
+        "total_cases": 3,
+        "successful_cases": 3,
+        "success_rate": 1.0,
+        "avg_relevance_score": 0.4207297166188558,
+        "min_relevance_score": 0.39244574308395386,
+        "max_relevance_score": 0.44661128520965576
+      }
+    },
+    "ad_rewriter": {
+      "performance_level": "excellent",
+      "success_rate": 1.0,
+      "key_metrics": {
+        "total_cases": 3,
+        "successful_cases": 3,
+        "success_rate": 1.0,
+        "avg_bleu_score": 6.973934010872898e-156
+      }
+    }
+  },
+  "recommendations": []
+}

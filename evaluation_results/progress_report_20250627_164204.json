@@ -1,0 +1,18 @@
+{
+  "timestamp": "2025-06-27T16:42:04.671112",
+  "completed_agents": [
+    "ad_performance",
+    "blog_search",
+    "ad_rewriter",
+    "web_crawler"
+  ],
+  "total_agents_planned": 3,
+  "progress": "4/3 agents completed",
+  "latest_results": {
+    "ad_performance": {
+      "total_test_cases": 3,
+      "successful_evaluations": 3,
+      "success_rate": 1.0
+    }
+  }
+}
