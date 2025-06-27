@@ -112,20 +112,15 @@ class AdRewriterAgent:
         try:
             logger.info(f"Rewriting ad text for {request.target_tone} tone and {request.target_platform} platform")
             
-            # Get guidelines for tone and platform
             tone_guide = self.tone_guidelines.get(request.target_tone, {})
             platform_guide = self.platform_guidelines.get(request.target_platform, {})
             
-            # Generate the main rewritten text
             rewritten_text = await self._generate_rewritten_text(request, tone_guide, platform_guide)
             
-            # Generate improvements list
             improvements = await self._analyze_improvements(request.original_text, rewritten_text, request)
             
-            # Generate platform-specific tips
             platform_tips = await self._generate_platform_tips(request.target_platform, rewritten_text)
             
-            # Generate alternative versions
             alternative_versions = await self._generate_alternatives(request, tone_guide, platform_guide)
             
             return AdRewriteResponse(
@@ -150,7 +145,6 @@ class AdRewriterAgent:
     ) -> str:
         """Generate the main rewritten ad text."""
         try:
-            # Build detailed prompt
             prompt = f"""
             Rewrite the following ad text to match the specified tone and optimize for the target platform:
             
@@ -229,14 +223,13 @@ class AdRewriterAgent:
                 temperature=0.3
             )
             
-            # Parse improvements
             improvements = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and (line.startswith('-') or line.startswith('•') or line[0].isdigit() or line[0].isupper()):
                     improvements.append(line.lstrip('-•0123456789. '))
             
-            return improvements[:6]  # Limit to 6 improvements
+            return improvements[:6]  
             
         except Exception as e:
             logger.error(f"Failed to analyze improvements: {e}")
@@ -274,14 +267,13 @@ class AdRewriterAgent:
                 temperature=0.4
             )
             
-            # Parse tips
             tips = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and (line.startswith('-') or line.startswith('•') or line[0].isdigit() or len(line) > 10):
                     tips.append(line.lstrip('-•0123456789. '))
             
-            return tips[:4]  # Limit to 4 tips
+            return tips[:4] 
             
         except Exception as e:
             logger.error(f"Failed to generate platform tips: {e}")
@@ -315,10 +307,9 @@ class AdRewriterAgent:
             response = await self.azure_client.generate_completion(
                 messages=messages,
                 system_prompt=self.system_prompt,
-                temperature=0.8  # Higher temperature for more creative variations
+                temperature=0.8 
             )
             
-            # Parse alternatives
             alternatives = []
             for line in response.split('\n'):
                 line = line.strip()

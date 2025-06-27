@@ -15,7 +15,6 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-# Initialize agent (will be created once per process)
 ad_rewriter_agent = AdRewriterAgent()
 
 
@@ -46,7 +45,6 @@ async def rewrite_ad_text(request: AdRewriteRequest) -> AdRewriteResponse:
     try:
         logger.info(f"Received ad rewrite request for {request.target_tone} tone and {request.target_platform} platform")
         
-        # Validate input
         if not request.original_text or len(request.original_text.strip()) < 10:
             raise HTTPException(
                 status_code=400,
@@ -65,7 +63,6 @@ async def rewrite_ad_text(request: AdRewriteRequest) -> AdRewriteResponse:
                 detail="Maximum length must be at least 20 characters if specified"
             )
         
-        # Perform rewriting
         result = await ad_rewriter_agent.rewrite_ad_text(request)
         
         logger.info("Ad text rewriting completed successfully")

@@ -51,13 +51,10 @@ async def crawl_urls(request: CrawlRequest):
         CrawlResponse with crawling results
     """
     try:
-        # Convert HttpUrl objects to strings
         urls = [str(url) for url in request.urls]
         
-        # Initialize crawler
         crawler = WebCrawler(delay=request.delay)
         
-        # Crawl and store
         result = await crawler.crawl_and_store(urls)
         
         return CrawlResponse(
@@ -87,10 +84,8 @@ async def crawl_blog_site(request: BlogCrawlRequest):
         CrawlResponse with crawling results
     """
     try:
-        # Initialize crawler
         crawler = WebCrawler(delay=request.delay)
         
-        # Crawl blog site
         result = await crawler.crawl_website_blog(
             str(request.blog_url), 
             max_articles=request.max_articles
@@ -124,10 +119,8 @@ async def crawl_urls_background(request: CrawlRequest, background_tasks: Backgro
         Message indicating task started
     """
     try:
-        # Convert HttpUrl objects to strings
         urls = [str(url) for url in request.urls]
         
-        # Add crawling task to background
         background_tasks.add_task(background_crawl_task, urls, request.delay)
         
         return {
@@ -149,11 +142,9 @@ async def get_collection_stats():
         Collection statistics
     """
     try:
-        # Initialize ChromaDB client
         chroma_client = ChromaClient()
         await chroma_client.initialize()
         
-        # Get stats
         stats = await chroma_client.get_collection_stats()
         
         return {
@@ -179,11 +170,9 @@ async def search_content(query: str, n_results: int = 5):
         Search results
     """
     try:
-        # Initialize ChromaDB client
         chroma_client = ChromaClient()
         await chroma_client.initialize()
         
-        # Search
         results = await chroma_client.search(query, n_results=n_results)
         
         return {
@@ -208,10 +197,8 @@ async def background_crawl_task(urls: List[str], delay: float):
     try:
         logger.info(f"Starting background crawl for {len(urls)} URLs")
         
-        # Initialize crawler
         crawler = WebCrawler(delay=delay)
         
-        # Crawl and store
         result = await crawler.crawl_and_store(urls)
         
         logger.info(f"Background crawl completed: {result}")

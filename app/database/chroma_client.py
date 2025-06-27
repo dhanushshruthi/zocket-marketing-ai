@@ -27,18 +27,14 @@ class ChromaClient:
     async def initialize(self):
         """Initialize ChromaDB client and embedding model."""
         try:
-            # Create data directory if it doesn't exist
             os.makedirs(self.settings.chroma_db_path, exist_ok=True)
             
-            # Initialize ChromaDB client
             self.client = chromadb.PersistentClient(
                 path=self.settings.chroma_db_path
             )
             
-            # Initialize embedding model
             self.embedding_model = SentenceTransformer('all-MiniLM-L6-v2')
             
-            # Get or create collection
             self.collection = self.client.get_or_create_collection(
                 name=self.settings.chroma_collection_name,
                 metadata={"description": "Marketing knowledge base"}
@@ -53,13 +49,11 @@ class ChromaClient:
     async def initialize_sample_data(self):
         """Initialize sample marketing blog data."""
         try:
-            # Check if collection already has data
             count = self.collection.count()
             if count > 0:
                 logger.info(f"Collection already has {count} documents")
                 return
             
-            # Sample marketing blog data
             sample_data = [
                 {
                     "id": "blog_1",
@@ -135,7 +129,6 @@ class ChromaClient:
                 }
             ]
             
-            # Add documents to collection
             await self.add_documents(sample_data)
             logger.info(f"Added {len(sample_data)} sample documents to collection")
             
@@ -150,10 +143,8 @@ class ChromaClient:
             ids = [doc["id"] for doc in documents]
             metadatas = [doc["metadata"] for doc in documents]
             
-            # Generate embeddings
             embeddings = self.embedding_model.encode(contents).tolist()
             
-            # Add to collection
             self.collection.add(
                 embeddings=embeddings,
                 documents=contents,
@@ -168,17 +159,13 @@ class ChromaClient:
     async def search(self, query: str, n_results: int = 5, filter_metadata: Optional[Dict] = None) -> List[Dict[str, Any]]:
         """Search for similar documents."""
         try:
-            # Generate query embedding
             query_embedding = self.embedding_model.encode([query]).tolist()
             
-            # Search in collection
             results = self.collection.query(
                 query_embeddings=query_embedding,
                 n_results=n_results,
                 where=filter_metadata
             )
-            
-            # Format results
             formatted_results = []
             for i in range(len(results['documents'][0])):
                 formatted_results.append({
@@ -211,7 +198,6 @@ class ChromaClient:
         """Close the ChromaDB client."""
         try:
             if self.client:
-                # ChromaDB doesn't require explicit closing
                 logger.info("ChromaDB client closed")
         except Exception as e:
             logger.error(f"Failed to close ChromaDB client: {e}") 

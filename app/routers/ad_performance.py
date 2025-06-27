@@ -16,7 +16,6 @@ logger = logging.getLogger(__name__)
 
 router = APIRouter()
 
-# Initialize agent (will be created once per process)
 ad_performance_agent = AdPerformanceAgent()
 
 
@@ -47,7 +46,6 @@ async def analyze_ad_performance(request: AdPerformanceRequest) -> AdPerformance
     try:
         logger.info(f"Received ad performance analysis request for {len(request.ad_data)} campaigns")
         
-        # Validate input data
         if not request.ad_data:
             raise HTTPException(
                 status_code=400,
@@ -60,7 +58,6 @@ async def analyze_ad_performance(request: AdPerformanceRequest) -> AdPerformance
                 detail="Too many campaigns provided. Maximum 100 campaigns allowed."
             )
         
-        # Validate individual campaign data
         for i, ad_data in enumerate(request.ad_data):
             if ad_data.impressions < 0 or ad_data.clicks < 0 or ad_data.conversions < 0 or ad_data.spend < 0:
                 raise HTTPException(
@@ -74,7 +71,6 @@ async def analyze_ad_performance(request: AdPerformanceRequest) -> AdPerformance
                     detail=f"Campaign '{ad_data.campaign_name}' has more clicks than impressions"
                 )
         
-        # Perform analysis
         result = await ad_performance_agent.analyze_performance(
             ad_data=request.ad_data,
             analysis_type=request.analysis_type

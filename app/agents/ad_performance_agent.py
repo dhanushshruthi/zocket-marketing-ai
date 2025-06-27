@@ -41,22 +41,16 @@ class AdPerformanceAgent:
         try:
             logger.info(f"Analyzing {len(ad_data)} ad campaigns")
             
-            # Convert to DataFrame for analysis
             df = self._prepare_dataframe(ad_data)
             
-            # Calculate metrics
             metrics = self._calculate_metrics(df)
             
-            # Generate insights using AI
             insights = await self._generate_insights(df, metrics, analysis_type)
             
-            # Generate recommendations
             recommendations = await self._generate_recommendations(df, metrics)
             
-            # Identify top performers and underperformers
             top_performers, underperformers = self._identify_performance_tiers(df)
             
-            # Create summary
             summary = self._create_summary(df, metrics)
             
             return AdPerformanceResponse(
@@ -90,7 +84,6 @@ class AdPerformanceAgent:
         
         df = pd.DataFrame(data)
         
-        # Calculate additional metrics
         df['conversion_rate'] = (df['conversions'] / df['clicks'] * 100).fillna(0)
         df['cpm'] = (df['spend'] / df['impressions'] * 1000).fillna(0)
         df['cost_per_click'] = (df['spend'] / df['clicks']).fillna(0)
@@ -120,7 +113,6 @@ class AdPerformanceAgent:
     async def _generate_insights(self, df: pd.DataFrame, metrics: Dict[str, float], analysis_type: str) -> List[str]:
         """Generate AI-powered insights from the data."""
         try:
-            # Prepare data summary for AI
             data_summary = f"""
             Performance Data Analysis:
             - Total Campaigns: {metrics['num_campaigns']}
@@ -160,14 +152,13 @@ class AdPerformanceAgent:
                 temperature=0.3
             )
             
-            # Parse insights from response
             insights = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and (line.startswith('-') or line.startswith('•') or line[0].isdigit()):
                     insights.append(line.lstrip('-•0123456789. '))
             
-            return insights[:7]  # Limit to 7 insights
+            return insights[:7] 
             
         except Exception as e:
             logger.error(f"Failed to generate insights: {e}")
@@ -176,7 +167,6 @@ class AdPerformanceAgent:
     async def _generate_recommendations(self, df: pd.DataFrame, metrics: Dict[str, float]) -> List[str]:
         """Generate AI-powered recommendations."""
         try:
-            # Identify problem areas
             high_cpa_campaigns = df[df['cpa'] > df['cpa'].quantile(0.75)]['campaign_name'].tolist()
             low_ctr_campaigns = df[df['ctr'] < df['ctr'].quantile(0.25)]['campaign_name'].tolist()
             low_conversion_campaigns = df[df['conversion_rate'] < df['conversion_rate'].quantile(0.25)]['campaign_name'].tolist()
@@ -214,15 +204,14 @@ class AdPerformanceAgent:
                 system_prompt=self.system_prompt,
                 temperature=0.4
             )
-            
-            # Parse recommendations from response
+
             recommendations = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and (line.startswith('-') or line.startswith('•') or line[0].isdigit()):
                     recommendations.append(line.lstrip('-•0123456789. '))
             
-            return recommendations[:7]  # Limit to 7 recommendations
+            return recommendations[:7] 
             
         except Exception as e:
             logger.error(f"Failed to generate recommendations: {e}")
@@ -230,17 +219,14 @@ class AdPerformanceAgent:
     
     def _identify_performance_tiers(self, df: pd.DataFrame) -> tuple[List[str], List[str]]:
         """Identify top performers and underperformers."""
-        # Calculate performance score (weighted combination of metrics)
         df['performance_score'] = (
             (df['ctr'] / df['ctr'].max() * 0.3) +
             (df['conversion_rate'] / df['conversion_rate'].max() * 0.4) +
-            ((df['cpa'].max() - df['cpa']) / df['cpa'].max() * 0.3)  # Lower CPA is better
+            ((df['cpa'].max() - df['cpa']) / df['cpa'].max() * 0.3) 
         ).fillna(0)
         
-        # Sort by performance score
         df_sorted = df.sort_values('performance_score', ascending=False)
         
-        # Top 20% are top performers, bottom 20% are underperformers
         num_campaigns = len(df)
         top_count = max(1, num_campaigns // 5)
         bottom_count = max(1, num_campaigns // 5)

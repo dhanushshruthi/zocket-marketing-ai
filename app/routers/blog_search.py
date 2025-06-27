@@ -71,7 +71,6 @@ async def search_marketing_blogs(
                 detail="max_results must be between 1 and 50"
             )
         
-        # Perform search
         result = await agent.search_and_answer(request)
         
         logger.info(f"Blog search completed: {result.total_results} results in {result.search_time_ms}ms")
@@ -130,7 +129,6 @@ async def get_available_topics(request: Request):
     that can be used for filtering search results.
     """
     try:
-        # These are based on the sample data initialized in ChromaDB
         return {
             "topics": [
                 "summer_sales",

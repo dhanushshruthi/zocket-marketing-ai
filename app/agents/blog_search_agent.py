@@ -42,28 +42,22 @@ class BlogSearchAgent:
             start_time = time.time()
             logger.info(f"Processing blog search query: {request.query}")
             
-            # Step 1: Initial vector search
             initial_results = await self._perform_vector_search(request)
             
-            # Step 2: Query analysis and expansion
             expanded_queries = await self._analyze_and_expand_query(request.query)
             
-            # Step 3: Multi-query search for comprehensive results
             comprehensive_results = await self._perform_multi_query_search(
                 expanded_queries, request.max_results
             )
             
-            # Step 4: Combine and deduplicate results
             combined_results = self._combine_and_deduplicate_results(
                 initial_results, comprehensive_results
             )
             
-            # Step 5: Generate AI-enhanced response with context
             enhanced_results = await self._enhance_results_with_ai(
                 request.query, combined_results
             )
             
-            # Step 6: Generate suggested queries
             suggested_queries = await self._generate_suggested_queries(request.query, enhanced_results)
             
             search_time = (time.time() - start_time) * 1000
@@ -83,14 +77,12 @@ class BlogSearchAgent:
     async def _perform_vector_search(self, request: BlogSearchRequest) -> List[Dict[str, Any]]:
         """Perform initial vector search in ChromaDB."""
         try:
-            # Build filter metadata
             filter_metadata = {}
             if request.filter_category:
                 filter_metadata["category"] = request.filter_category
             if request.filter_topic:
                 filter_metadata["topic"] = request.filter_topic
             
-            # Search in ChromaDB
             results = await self.chroma_client.search(
                 query=request.query,
                 n_results=request.max_results,
@@ -127,14 +119,13 @@ class BlogSearchAgent:
                 temperature=0.3
             )
             
-            # Parse expanded queries
             expanded_queries = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and not line.startswith(('Original Query:', '-', '•', '1.', '2.', '3.', '4.')):
                     expanded_queries.append(line.strip('"'))
             
-            return expanded_queries[:4]  # Limit to 4 expanded queries
+            return expanded_queries[:4]
             
         except Exception as e:
             logger.error(f"Failed to analyze and expand query: {e}")
@@ -172,19 +163,16 @@ class BlogSearchAgent:
             seen_ids = set()
             combined_results = []
             
-            # Process initial results first (they have priority)
             for result in initial_results:
                 if result['id'] not in seen_ids:
                     seen_ids.add(result['id'])
                     combined_results.append(result)
             
-            # Add additional results that haven't been seen
             for result in additional_results:
                 if result['id'] not in seen_ids:
                     seen_ids.add(result['id'])
                     combined_results.append(result)
             
-            # Sort by relevance (lower distance = higher relevance)
             combined_results.sort(key=lambda x: x['distance'])
             
             return combined_results
@@ -204,12 +192,10 @@ class BlogSearchAgent:
             
             for result in search_results:
                 try:
-                    # Generate relevance explanation
                     relevance_explanation = await self._generate_relevance_explanation(
                         original_query, result['content']
                     )
                     
-                    # Calculate relevance score (1 - distance, clamped to 0-1)
                     relevance_score = max(0, min(1, 1 - result['distance']))
                     
                     enhanced_result = BlogSearchResult(
@@ -226,7 +212,6 @@ class BlogSearchAgent:
                     
                 except Exception as e:
                     logger.warning(f"Failed to enhance result {result['id']}: {e}")
-                    # Fallback to basic result
                     enhanced_result = BlogSearchResult(
                         id=result['id'],
                         content=result['content'],
@@ -239,7 +224,6 @@ class BlogSearchAgent:
             
         except Exception as e:
             logger.error(f"Failed to enhance results with AI: {e}")
-            # Fallback to basic results
             basic_results = []
             for result in search_results:
                 basic_results.append(BlogSearchResult(
@@ -284,7 +268,6 @@ class BlogSearchAgent:
     ) -> List[str]:
         """Generate suggested related queries based on search results."""
         try:
-            # Extract topics from results metadata
             topics = set()
             categories = set()
             
@@ -319,14 +302,13 @@ class BlogSearchAgent:
                 max_tokens=200
             )
             
-            # Parse suggested queries
             suggested_queries = []
             for line in response.split('\n'):
                 line = line.strip()
                 if line and not line.startswith(('Based on', 'Original Query:', '-', '•')):
                     suggested_queries.append(line.strip('"'))
             
-            return suggested_queries[:4]  # Limit to 4 suggestions
+            return suggested_queries[:4] 
             
         except Exception as e:
             logger.error(f"Failed to generate suggested queries: {e}")

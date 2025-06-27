@@ -21,14 +21,11 @@ from app.routers import ad_performance, blog_search, ad_rewriter, web_crawler
 from app.database.chroma_client import ChromaClient
 from app.utils.config import get_settings
 
-# Load environment variables
 load_dotenv()
 
-# Configure logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Global variables for database clients
 chroma_client = None
 
 @asynccontextmanager
@@ -36,10 +33,8 @@ async def lifespan(app: FastAPI):
     """Application lifespan manager for startup and shutdown events."""
     global chroma_client
     
-    # Startup
     logger.info("Starting Marketing AI Agents application...")
     
-    # Initialize ChromaDB client
     try:
         chroma_client = ChromaClient()
         await chroma_client.initialize()
@@ -49,7 +44,6 @@ async def lifespan(app: FastAPI):
         logger.error(f"Failed to initialize ChromaDB client: {e}")
         raise
     
-    # Initialize sample marketing blog data
     try:
         await chroma_client.initialize_sample_data()
         logger.info("Sample marketing data initialized")
@@ -58,12 +52,10 @@ async def lifespan(app: FastAPI):
     
     yield
     
-    # Shutdown
     logger.info("Shutting down Marketing AI Agents application...")
     if chroma_client:
         await chroma_client.close()
 
-# Create FastAPI application
 app = FastAPI(
     title="Marketing AI Agents",
     description="Lightweight AI agents for marketing research tasks using Azure OpenAI and ChromaDB",
@@ -73,16 +65,14 @@ app = FastAPI(
     lifespan=lifespan
 )
 
-# Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure appropriately for production
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
 
-# Include routers
 app.include_router(ad_performance.router, prefix="/api/v1", tags=["Ad Performance"])
 app.include_router(blog_search.router, prefix="/api/v1", tags=["Blog Search"])
 app.include_router(ad_rewriter.router, prefix="/api/v1", tags=["Ad Rewriter"])
@@ -130,7 +120,7 @@ async def health_check():
     
     health_status = {
         "status": "healthy",
-        "timestamp": "2024-01-01T00:00:00Z",  # In production, use actual timestamp
+        "timestamp": "2024-01-01T00:00:00Z",  
         "services": {
             "azure_openai": "connected" if settings.azure_openai_api_key else "not_configured",
             "chroma_db": "connected" if chroma_client else "not_connected",
